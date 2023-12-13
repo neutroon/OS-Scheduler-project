@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opertating system</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container text-center ">
+      <h1 class="text-primary mb-5">
+        OS Scheduler project.
+      </h1>
+
+
+
+      <form>
+
+      <div class=" text-start ms-0 me-0">
+        <label for="arrivalTime">Arrival Time</label>
+        <input class="form-control" id="arrivalTime" type="number" />
+      </div>
+
+      <div class=" text-start ms-0 me-0">
+        <label for="piority">priority</label>
+        <input class="form-control" id="piority" type="number" />
+      </div>
+      <div class=" text-start ms-0 me-0">
+        <label for="burstTime">Burst Time</label>
+        <input class="form-control" id="burstTime" type="number" />
+      </div>
+
+      <button id="addprocess" class="btn btn-primary p-1 ps-3 pe-3 mt-3 mb-3">Add process</button>
+
+
+      </form>
+
+
+
+
+
+
+      <div
+        class="table-responsive"
+      >
+        <table
+            class="table table-striped table-hover table-bordered table-secondary align-middle"
+        >
+
+            <thead class="table-dark">
+
+                <tr>
+                    <th>process</th>
+                    <th>Arrival time</th>
+                    <th>priority</th>
+                    <th>Burst time</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+
+                <tr class="table-primary">
+                    <td>P1</td>
+                    <td>Ex</td>
+                    <td>Ex</td>
+                    <td>Ex</td>
+                </tr>
+
+            </tbody>
+
+
+            <tfoot>
+                
+            </tfoot>
+        </table>
+      </div>
+      
+
+      <div id="methodsBtns">
+      <button id="FCFS" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">FCFS</button>
+      <button id="" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">Round-Robin</button>
+      <button id="" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">SJF - Preemptive</button>
+      <button id="" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">SJF - Non Preemptive</button>
+      <button id="" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">Priority - Preemptive</button>
+      <button id="" class="btn btn-outline-primary p-1 ps-3 pe-3 mt-3 mb-3">Priority - Non Preemptive</button>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="output d-flex justify-content-center gap-2 bg-secondary">
+        <div class="bg-body-tertiary mb-2 mt-2 p-3">average turnaround time = <span id="TAT">0</span></div>
+
+        <div class="bg-body-tertiary mb-2 mt-2 p-3">average waiting time = <span id="waiting">0</span></div>
+      </div>
+
+
+      <div class="d-flex flex-column align-items-start mt-3 bg-secondary text-white p-2">
+        <span>
+            P1: 0-1
+        </span>
+        <span>
+            P2: 1-2
+        </span>
+        <span>
+            P3: 2-3
+        </span>
+        <span>
+            P4: 3-4
+        </span>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
